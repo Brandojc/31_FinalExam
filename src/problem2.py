@@ -255,13 +255,15 @@ def problem2b(sequence):
       :type sequence  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    seq = []
     for k in range(len(sequence)):
-        for j in range(len(sequence)):
-            if abs(sequence[k]) > abs(sequence[j]):
-                return k
+        seq = seq + [abs(sequence[k])]
+    for j in range(len(sequence)):
+        if seq[j] == max(seq):
+            return j
 
 
 def run_test_problem2c():
@@ -405,7 +407,13 @@ def problem2c(x):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    # x=int
+    # while True:
+    #     is_prime(n):
+    #     is_prime(sum_of_digits(n):
+    #     n >= x:
+    #
+    # return n
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
