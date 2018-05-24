@@ -21,7 +21,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
     run_test_problem2a()
     run_test_problem2b()
-    # run_test_problem2c()
+    run_test_problem2c()
 
 
 def is_prime(n):
@@ -407,13 +407,11 @@ def problem2c(x):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    # x=int
-    # while True:
-    #     is_prime(n):
-    #     is_prime(sum_of_digits(n):
-    #     n >= x:
-    #
-    # return n
+    while True:
+        if is_prime(x) and is_prime(sum_of_digits(x)):
+            break
+        x = x + 1
+    return x
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
